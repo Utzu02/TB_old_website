@@ -1,0 +1,171 @@
+body { padding: 0; margin: 0 auto; }
+#unity-container { position: absolute }
+#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-mobile { width: 100%; height: 100% }
+#unity-canvas { background: #444444 }
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; background: url('progress-bar-empty-dark.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
+#unity-footer { position: relative }
+.unity-mobile #unity-footer { display: none }
+#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+#unity-mobile-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+#content1 {
+    position: relative;
+    height: 100vh;
+}
+#content2{
+    display: flex;
+    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+#content2 img{
+    filter: invert(1);
+}
+p a{
+    text-decoration: none;
+}
+footer{
+    color: white;
+    position: relative;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: text;
+    height: 35vh;
+    box-shadow: 0 0 3vh 3vh rgb(46, 46, 46);
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+*{
+    margin: 0 auto;
+}
+#media{
+    margin-left: 2vh;
+    position: relative;
+}
+#img_container{
+    display: inline-block;
+}
+.media_img{
+    filter: invert(100%);
+    margin-left: 5vh;
+    height: 10vh !important;
+}
+.zoom
+{
+    transition: all .25s ease-in-out;
+}
+.zoom:hover{
+    transform: scale(1.2);
+}
+#navigate{
+    margin-top: 0vh;
+    display: flex;
+    font-size: 2vh;
+}
+nav>p
+{
+    margin: 0 auto;
+}
+nav>p>a
+{
+    color:white;
+}
+h3
+{
+    margin-bottom: 1vh;
+}
+h2{
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+    font-size: 5vh;
+}
+.categories>p>a{
+        color: white;
+}
+.contact{
+    margin-left: 8vh;
+    display: inline-block;
+}
+.contact>i{
+    font-size: 2.5vh;
+    display:flex;
+    height: 5vh;
+}
+.contact img{
+
+    filter: invert(100%);
+}
+.categories p a:hover{
+    color:rgb(148, 172, 224);
+}
+@media all and (max-width: 1250px)
+{
+    #media{
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    #img_container{
+        display: flex;
+    }
+    .media_img{
+        margin-top: 2vh;
+        height: 8vh !important;
+    }
+    #navigate{
+        font-size: 1.5vh;
+    }
+    .contact>i{
+        font-size: 2vh;
+        height: 4vh;
+    }
+    .contact{
+        margin-left: 0;
+    }
+}
+@media all and (orientation: portrait)
+{
+    .contact{
+        margin-top: 5vw;
+        margin-left: 0vh;
+        position: relative;
+        display: inline-block;
+    }
+    h2{
+        margin-top: 0vh;
+        margin-bottom: 7vw;
+        font-size: 6vw;
+    }
+    footer
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+    #contact_padding{
+        padding-bottom: 5vw;
+    }
+    #img_container{
+        display: inline-block;
+        margin: 5vw;
+    }
+    .media_img{
+        margin-top: 2vh;
+        height: 20vw !important;
+    }
+}
